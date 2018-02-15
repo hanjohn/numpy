@@ -211,7 +211,9 @@ def reshape(a, newshape, order='C'):
      # the initial object.
      >>> c = b.view()
      >>> c.shape = (20)
-     AttributeError: incompatible shape for a non-contiguous array
+     AttributeError: Incompatible shape for this array; the in-memory 
+     representation of the array would mutate. Use `.reshape()` to make a copy
+     with the desired shape.
 
     The `order` keyword gives the index ordering both for *fetching* the values
     from `a`, and then *placing* the values into the output array.
